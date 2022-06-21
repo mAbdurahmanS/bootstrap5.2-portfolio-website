@@ -1,0 +1,570 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+/* ========================== NAVBAR ========================== */
+.bg{
+    background: #FFF;
+}
+
+.navbar .navbar-brand{
+    color: #111;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.navbar span{
+    color: #27AE60;
+}
+
+.navbar-toggler{
+    border: 0;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus{
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.toggler-icon{
+    width: 30px;
+    height: 3px;
+    background-color: #e74c3c;
+    display: block;
+    transition: all 0.2s;
+}
+
+.middle-bar{
+    margin: 5px auto;
+}
+
+.navbar-toggler .top-bar{
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar{
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar{
+    transform: rotate(-45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggler.collapsed .top-bar{
+    transform: rotate(0);
+}
+.navbar-toggler.collapsed .middle-bar{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.navbar-toggler.collapsed .bottom-bar{
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .toggler-icon{
+    background-color: #111;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.disabled{
+    color: #111;
+}
+
+.navbar .navbar-nav .nav-item .nav-link{
+    font-size: normal;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    transition: all-ease-in 0.4s;
+    color: #a7a7a7;
+}
+.navbar .navbar-nav .nav-link:hover{
+    background: transparent;
+    color: #111;
+}
+.navbar .navbar-nav .nav-link::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: transparent;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+.navbar .navbar-nav .nav-link:hover::after{
+    width: 70%;
+    background: #27AE60;
+    color: #27AE60;
+}
+
+.navbar .navbar-nav .more{
+    color: #27AE60;
+    border-color: #27AE60;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 0.7rem 2rem;
+    transition: all ease-in-out 0.4s;
+}
+.navbar .navbar-nav .more:hover{
+    color: #fff;
+    background-color: #27AE60;
+    transition: all ease-in-out 0.4s;
+}
+
+
+/* ========================== HERO ========================== */
+#hero{
+    margin-top: 5rem;
+}
+
+#hero .row .col-md-6 h6{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#hero .row .col-md-6 h1{
+    font-size: 64px;
+    font-weight: 600;
+}
+
+#hero .row .col-md-6 span{
+    color: #27AE60;
+}
+
+#hero .row .col-md-6 p{
+    color: #5E5E5E;
+    margin-bottom: 2.2rem;
+}
+
+#hero .row .more{
+    color: #fff;
+    background-color: #27AE60;
+    border-color: #27AE60;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 0.9rem 2rem;
+    transition: all ease-in-out 0.4s;
+}
+#hero .row .more:hover{
+    color: #27AE60;
+    background-color: transparent;
+    border-color: #27AE60;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 0.9rem 2rem;
+    transition: all ease-in-out 0.4s;
+}
+
+#hero .row .col-md-6 img{
+    width: 100%;
+}
+
+
+/* ========================== ABOUT ========================== */
+#about .title{
+    font-size: 144px;
+    color: #E3E3E3;
+}
+
+#about .row .col-md-4 h1{
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+#about .row .col-md-4 span{
+    color: #27AE60;
+}
+
+#about .row .col-md-4 .more{
+    color: #27AE60;
+    border-color: #27AE60;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 0.9rem 2rem;
+    transition: all ease-in-out 0.4s;
+}
+#about .row .col-md-4 .more:hover{
+    color: #fff;
+    background-color: #27AE60;
+    transition: all ease-in-out 0.4s;
+}
+
+#about .row .col-md-8 p{
+    color: #5E5E5E;
+}
+
+
+/* ========================== SKILL ========================== */
+#skill .row .col-md-3 a{
+    text-decoration: none;
+}
+
+#skill .row .col-md-3 .content{
+    background-color: #fff;
+    color: #111;
+    margin: 1rem;
+    padding: 1.3rem;
+    border-radius: 10px;
+    transition: all ease-in-out 0.4s;
+}
+#skill .row .col-md-3 .content:hover{
+    background-color: #27AE60;
+    color: #fff;
+    transition: all ease-in-out 0.4s;
+}
+
+#skill .row .col-md-3 .content .row .col-md-4{
+    font-size: 28px;
+}
+
+#skill .row .col-md-3 .content .row .col-md-8{
+    font-size: 12px;
+}
+
+#skill .row .col-md-3 .content h4{
+    font-size: 26px;
+}
+
+#skill .row .col-md-3 .content p{
+    font-size: 12px;
+    display: none;
+}
+#skill .row .col-md-3 .content:hover p{
+    display: block;
+}
+
+#skill .row .col-md-3 .content h6{
+    margin-bottom: 30px;
+}
+
+
+/* ========================== COMPANY ========================== */
+#company .title{
+    font-size: 144px;
+    color: #E3E3E3;
+}
+
+#company .row .col-md-7 h6{
+    font-size: 18px;
+    font-weight: 600;
+    color: #27AE60;
+}
+
+#company .row .col-md-7 h1{
+    font-size: 64px;
+    font-weight: 600;
+}
+
+#company .row .col-md-7 p{
+    color: #5E5E5E;
+    margin-bottom: 3rem;
+}
+
+#company .row .col-md-7 .more{
+    color: #27AE60;
+    border-color: #27AE60;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 0.9rem 2rem;
+    transition: all ease-in-out 0.4s;
+}
+#company .row .col-md-7 .more:hover{
+    color: #fff;
+    background-color: #27AE60;
+    transition: all ease-in-out 0.4s;
+}
+
+#company .row .col-md-5 img{
+    height: auto;
+    width: 100%;
+}
+
+
+/* ========================== PROJECTS ========================== */
+#projects .title{
+    font-size: 144px;
+    color: #E3E3E3;
+}
+
+#projects .row .col-md-4 h1{
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+#projects .row .col-md-4 span{
+    color: #27AE60;
+}
+
+#projects .row .col-md-4 p{
+    color: #5E5E5E;
+    margin-bottom: 2.5rem;
+}
+
+#projects .row .col-md-4 .more{
+    color: #27AE60;
+    border-color: #27AE60;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 0.9rem 2rem;
+    transition: all ease-in-out 0.4s;
+}
+#projects .row .col-md-4 .more:hover{
+    color: #fff;
+    background-color: #27AE60;
+    transition: all ease-in-out 0.4s;
+}
+
+#projects .row .col-md-8 .content a{
+    color:#111;
+    text-decoration: none;
+}
+
+#projects .row .col-md-8 .content a:hover{
+    text-decoration:underline;
+}
+
+
+#projects .row .col-md-8 .content img{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#projects .row .col-md-8 .content h4{
+    font-size: 26px;
+    font-weight: 600;
+}
+
+#projects .row .col-md-8 .content p{
+    color: #5E5E5E;
+    transition: all ease-in-out 0.4s;
+
+}
+
+
+/* Footer */
+
+.footer{
+    background-color: #FAFAFA;
+    margin-top: 10rem;
+}
+
+.footer h1{
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.footer .row .col-md-4 h1{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.footer span{
+    color: #27AE60;
+}
+
+.footer .more{
+    color: #27AE60;
+    border-color: #27AE60;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 0.9rem 2rem;
+    transition: all ease-in-out 0.4s;
+}
+.footer .more:hover{
+    color: #fff;
+    background-color: #27AE60;
+    transition: all ease-in-out 0.4s;
+}
+
+.footer .row .col-md-4 .icon{
+    background-color: #111;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+.footer .row .col-md-4 .icon:hover{
+    background-color: #27AE60;
+    color: #fff;
+}
+
+/* Footer */
+
+
+/* Responsive */
+
+@media (min-width: 0px) and (max-width: 767px){
+/* ========================== HERO ========================== */
+    #hero .row .col-md-6 h1{
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    #hero .row .atas{
+        margin-bottom: 3rem;
+    }
+
+
+    /* ========================== ABOUT ========================== */
+    #about .title{
+        font-size: 72px;
+    }
+
+    #about .row .col-md-4 h1{
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 3rem;
+    }
+
+    #about .row .col-md-4{
+        margin-bottom: 3rem;
+    }
+
+
+    /* ========================== COMPANY ========================== */
+    #company .title{
+        font-size: 60px;
+    }
+
+    #company .row .col-md-7 h1{
+        font-size: 42px;
+    }
+
+    #company .row .col-md-7 {
+        margin-bottom: 3rem;
+    }
+
+    #company .row .col-md-5 {
+        margin-bottom: 3rem;
+    }
+
+
+    /* ========================== PROJECTS ========================== */
+    #projects .title{
+        font-size: 72px;
+    }
+
+    #projects .row .col-md-4 h1{
+        font-size: 36px;
+    }
+
+    #projects .row .col-md-4{
+        margin-bottom: 3rem;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    /* ========================== HERO ========================== */
+    #hero .row .col-md-6 h6{
+        font-size: 16px;
+    }
+
+    #hero .row .col-md-6 h1{
+        font-size: 42px;
+    }
+
+    #hero .row .col-md-6 p{
+        font-size: 14px;
+    }
+
+
+    /* ========================== ABOUT ========================== */
+    #about .title{
+        font-size: 124px;
+    }
+
+    #about .row .col-md-4 h1{
+        font-size: 42px;
+    }
+
+    #about .row .col-md-8 p{
+        font-size: 14px;
+    }
+
+
+    /* ========================== SKILL ========================== */
+
+    #skill .row .col-md-3 .content h4{
+        font-size: 14px;
+    }
+
+    #skill .row .col-md-3 .content h6{
+        display: none;
+    }
+
+
+    /* ========================== COMPANY ========================== */
+
+    #company .title{
+        font-size: 124px;
+        color: #E3E3E3;
+    }
+
+    #company .row .col-md-7 h6{
+        font-size: 16px;
+    }
+
+    #company .row .col-md-7 h1{
+        font-size: 48px;
+    }
+
+    #company .row .col-md-7 p{
+        font-size: 14px;
+    }
+
+
+    /* ========================== PROJECTS ========================== */
+
+    #projects .title{
+        font-size: 124px;
+    }
+
+    #projects .row .col-md-4 p{
+        font-size: 14px;
+    }
+
+    #projects .row .col-md-8 a{
+        text-decoration: none;
+    }
+
+    #projects .row .col-md-8 .content h4{
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    #projects .row .col-md-8 .content p{
+        font-size: 14px;
+    }
+
+}
